@@ -1,7 +1,7 @@
 ---
 title: Example title
 author: KC
-pubDatetime: 2025-07-07T08:00:00Z
+pubDatetime: 2025-07-06T08:00:00Z
 description: This is the example description of the example post.
 ---
 
