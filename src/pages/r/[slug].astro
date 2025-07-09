@@ -1,0 +1,42 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { redirects } from "@/data/redirects";
+
+export async function getStaticPaths() {
+  return Object.keys(redirects).map((slug) => ({
+    params: { slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const redirectUrl = redirects[slug] ?? "/";
+---
+
+<Layout title="Redirecting...">
+  <Header />
+  <main class="mx-auto flex max-w-app flex-1 flex-col items-center justify-center">
+    <div class="mb-14 flex flex-col items-center justify-center text-center">
+      <img
+        src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXhoNWxqbGhsemZ4cndqejlzd2FzcjJ2bW90N2FjMzd4anlyeXNmayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Era7aEMrYBvyg/giphy.gif"
+        alt="Running Pikachu"
+        class="w-60 h-auto mb-6"
+      />
+      <p class="text-xl sm:text-2xl">Please wait while we redirect you…</p>
+      <p class="mt-2 text-lg">
+        If nothing happens, <a href={redirectUrl} class="underline text-accent">click here</a>.
+      </p>
+      <p id="redirect-url" hidden>{redirectUrl}</p>
+    </div>
+  </main>
+  <Footer />
+
+  <script is:inline>
+    window.onload = () => {
+      setTimeout(() => {
+        window.location.href = document.getElementById('redirect-url').textContent;
+      }, 1500);
+    };
+  </script>
+</Layout>
