@@ -7,6 +7,7 @@ import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
+import IconDocument from "@/assets/icons/IconDocument.svg";
 import { SITE } from "@/config";
 
 interface Social {
@@ -18,17 +19,25 @@ interface Social {
 
 export const SOCIALS: Social[] = [
   {
+    name: "Resume",
+    href: "https://drive.google.com/file/d/1_v3nzW9A_jMF75MU81UUqdNfKGiaWJxF/view?usp=drive_link",
+    linkTitle: `${SITE.title}'s Resume`,
+    icon: IconDocument,
+  },
+  {
     name: "GitHub",
     href: "https://github.com/kalyancheerla",
     linkTitle: `${SITE.title} on GitHub`,
     icon: IconGitHub,
   },
+  /*
   {
     name: "X",
     href: "https://x.com/kalyanch05",
     linkTitle: `${SITE.title} on X`,
     icon: IconBrandX,
   },
+  */
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/kalyancheerla/",
