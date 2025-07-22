@@ -118,7 +118,7 @@ Start small — you don't need to be an expert to begin!
 | **247CTF**      | Competitive Jeopardy-style CTFs          | [247ctf.com](https://247ctf.com)                    |
 | **TryHackMe**   | Guided labs for real-world skills        | [tryhackme.com](https://tryhackme.com)              |
 | **HackTheBox**  | VM-based hacking playground              | [hackthebox.com](https://www.hackthebox.com)        |
-| **Bugcrowd**    | Bug bounty programs (real-world hacking) | [bugcrowd.com](https://www.bugcrowd.com)            |
+| **VulnHub**     | Downloadable VMs for hacking             | [vulnhub.com](https://www.vulnhub.com)              |
 
 ---
 
@@ -136,10 +136,12 @@ Happy hacking 🥷 — Bon voyage, KC.
 
 * [OverTheWire](https://overthewire.org/wargames)
 * [picoCTF](https://picoctf.org), [247CTF](https://247ctf.com), [CTFTime](https://ctftime.org)
-* [HackTheBox](https://www.hackthebox.com), [TryHackMe](https://tryhackme.com)
+* [HackTheBox](https://www.hackthebox.com), [TryHackMe](https://tryhackme.com), [VulnHub](https://www.vulnhub.com/)
 * bugbounty: [Bugcrowd](https://bugcrowd.com)
 * others: [PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 * mine: [writeups](https://github.com/kalyancheerla/writeups)
+
+---
 
 ## 🔓 Solution
 
