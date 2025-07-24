@@ -13,7 +13,7 @@ tags:
 1. Play [Bandit](https://overthewire.org/wargames/bandit/).
 2. Register on [picoCTF](https://picoctf.org).
 3. Join a local or online community (like [UNTCybersecurity Club](https://unt.campuslabs.com/engage/organization/cyber-security-club)).
-4. Keep a repo of your notes & writeups.
+4. Keep a repo of your notes & writeups (like [my writeups](https://github.com/kalyancheerla/writeups/)).
 
 ---
 
