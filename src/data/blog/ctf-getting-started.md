@@ -104,7 +104,7 @@ Start small — you don't need to be an expert to begin!
 2. Register and solve a few problems on [picoCTF](https://picoctf.org)
 3. Join [UNTCybersecurity Club](https://unt.campuslabs.com/engage/organization/cyber-security-club) or band together
 4. Keep your writeups in a repo (like [mine](https://github.com/kalyancheerla/writeups))
-5. Follow upcoming competitions on [CTFTime.org](https://ctftime.org)
+5. Follow upcoming competitions on [CTFtime.org](https://ctftime.org)
 6. Ask questions, read others' writeups, and participate!
 
 ---
@@ -122,6 +122,36 @@ Start small — you don't need to be an expert to begin!
 
 ---
 
+## 🧪 About My CSCE 3550 Guest Lecture
+
+During the **Summer 2025** semester, I delivered a guest lecture on Capture the Flag (CTF) competitions for the Summer 2025 session of *CSCE 3550: Foundations of Cybersecurity*, taught by Dr. Lotfi Ben Othmane.
+
+During the talk, I:
+* 🎥 Demonstrated real CTF challenges (web, binary, and crypto)
+* 💬 Discussed how CTFs have shaped my journey into cybersecurity
+* 📜 Shared my experience competing in CANSecCTF (2nd place 🥈!)
+* 🔗 Provided curated resources and tips to help students get started
+
+Thank you to the students who attended and shared kind words after the session!
+
+📂 You can find the slides here: [`CTF Guest Lecture Slides (PDF)`](/assets/files/Getting_started_with_CTFs.pdf)
+
+🧭 This post will continue to serve as a reference hub for all the resources mentioned in the lecture — feel free to explore the links and start your CTF journey!
+
+---
+
+## 🔗 Resources
+
+* [OverTheWire](https://overthewire.org/wargames)
+* [picoCTF](https://picoctf.org), [247CTF](https://247ctf.com), [CTFtime](https://ctftime.org)
+* [HackTheBox](https://www.hackthebox.com), [TryHackMe](https://tryhackme.com), [VulnHub](https://www.vulnhub.com/)
+* [HackTricks Wiki](https://book.hacktricks.wiki/en/index.html)
+* bugbounty: [Bugcrowd](https://bugcrowd.com)
+* others: [PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
+* mine: [writeups](https://github.com/kalyancheerla/writeups)
+
+---
+
 ## 👋 Adios
 
 This blog's a work-in-progress — like all of us. I'm no guru, just curious (you should be too). Pick a challenge, break stuff, learn something.
@@ -129,17 +159,6 @@ This blog's a work-in-progress — like all of us. I'm no guru, just curious (yo
 Stuck? Need ideas? Ping me at [LinkedIn](https://linkedin.com/in/kalyancheerla) or [GitHub](https://github.com/kalyancheerla).
 
 Happy hacking 🥷 — Bon voyage, KC.
-
----
-
-## 🔗 Resources
-
-* [OverTheWire](https://overthewire.org/wargames)
-* [picoCTF](https://picoctf.org), [247CTF](https://247ctf.com), [CTFTime](https://ctftime.org)
-* [HackTheBox](https://www.hackthebox.com), [TryHackMe](https://tryhackme.com), [VulnHub](https://www.vulnhub.com/)
-* bugbounty: [Bugcrowd](https://bugcrowd.com)
-* others: [PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
-* mine: [writeups](https://github.com/kalyancheerla/writeups)
 
 ---
 
