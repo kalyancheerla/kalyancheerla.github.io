@@ -15,7 +15,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/kalyancheerla/kalyancheerla.github.io",
+    url: "https://github.com/kalyancheerla/kalyancheerla.github.io/tree/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
