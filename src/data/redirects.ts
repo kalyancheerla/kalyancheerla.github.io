@@ -5,6 +5,6 @@ export const redirects: Record<string, string> = {
   microsvcsthreatsmapper: "https://github.com/kalyancheerla/threatsmanager/tree/MicroSvcsThreatsMapper_Tool/Tools/MicroSvcsThreatsMapper#video",
   MicroSvcsThreatsMapper: "https://github.com/kalyancheerla/threatsmanager/tree/MicroSvcsThreatsMapper_Tool/Tools/MicroSvcsThreatsMapper#video",
   HotelCancellationsML: "https://github.com/kalyancheerla/Hotel-Reservation-Cancellation-Prediction",
-  ppt: "https://docs.google.com/presentation/d/1bA3Pf4JRuQ1kfrIacaB7FasDd3krhH66/edit?usp=sharing&ouid=103134828204008657489&rtpof=true&sd=true",
+  ppt: "https://1drv.ms/p/c/77f7f1145d1e1253/EcOowvxNJSpGhWu3lCTwPl0BOiC8Qvvv3yx_lurFr_TWdw?e=uqrvE1",
   voxpilot: "https://kalyanch.com/posts/voxpilot-client-side-genai/",
 };
