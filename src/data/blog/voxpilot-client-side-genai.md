@@ -37,8 +37,8 @@ VoxPilot runs entirely on-device, combining built-in browser APIs for speech-to-
 <iframe style="width: 100%; aspect-ratio: 1 / 0.5; margin: auto; display: block; overflow: hidden;" src="https://www.youtube.com/embed/Hy009vb03WM?si=NKe9sgZz7_U5zb5P" title="VoxPilot Demo Pitch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Outputs
-### QnA Promptign
-![QnA Prompting Output](/assets/images/VoxPilot_QnA_Prompting.gif)
+### Q&A Prompting
+![Q&A Prompting Output](/assets/images/VoxPilot_QnA_Prompting.gif)
 ### Web Navigation
 ![Web Navigation Output](/assets/images/VoxPilot_WebNavigation.gif)
 
