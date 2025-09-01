@@ -6,13 +6,17 @@ description: A Chrome extension that uses Gemini Nano to provide a privacy-first
 tags:
   - project
 ---
+## TL;DR
+VoxPilot is a privacy-first, on-device Chrome extension that lets you browse the web hands-free using natural voice or text prompts. It enables seamless navigation, content summarization, and Q&A without sending data to the cloud. Designed for accessibility and productivity, VoxPilot interprets flexible commands in real time using Gemini Nano and browser APIs. Form filling is coming soon!
 
-**VoxPilot is a privacy-first, voice-augmented AI assistant that lets you browse the web hands-free with natural, flexible commands — no rigid scripts, no data sent to servers. Designed for accessibility, productivity, and security, it runs entirely on-device, combining speech-to-text, natural language understanding, and action execution for a seamless browsing experience.**
+## Table of Contents
+## Introduction
+VoxPilot is a privacy-first Chrome extension that lets users navigate, summarize, and interact with web content hands-free using natural voice or text prompts.
 
-### Things we wanted to achieve!
-* Assistive AI navigation
-* Assistive AI Summarization with Q/A prompting
-* Assistive AI Form filling
+### Key Goals
+* Assistive AI **Navigation**
+* Assistive AI **Summarization with Q&A Prompting**
+* Assistive AI **Form Filling**
 
 ## Team
 * [Bhavani Rachakatla](https://www.linkedin.com/in/bhavani-rachakatla), [Kalyan Cheerla](https://www.linkedin.com/in/kalyancheerla)
@@ -37,6 +41,7 @@ VoxPilot runs entirely on-device, combining built-in browser APIs for speech-to-
 <iframe style="width: 100%; aspect-ratio: 1 / 0.5; margin: auto; display: block; overflow: hidden;" src="https://www.youtube.com/embed/Hy009vb03WM?si=NKe9sgZz7_U5zb5P" title="VoxPilot Demo Pitch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Outputs
+Below are some sample outputs demonstrating VoxPilot's capabilities in action.
 ### Q&A Prompting
 ![Q&A Prompting Output](/assets/images/VoxPilot_QnA_Prompting.gif)
 ### Web Navigation
