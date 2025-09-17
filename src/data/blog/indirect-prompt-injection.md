@@ -11,7 +11,7 @@ When I started building [**VoxPilot**](/posts/voxpilot-client-side-genai) — my
 
 Indirect prompt injection is when a malicious website doesn't attack your browser directly, but instead attacks the AI model's **instructions**. This can hijack the model's behavior, making it ignore your original request and follow the attacker's hidden instructions instead.
 
-Recently, I ran some tests inspired by [Zack's demo](https://x.com/zack_overflow/status/1959308058200551721), and the results were fascinating — and worrying.
+Recently, I ran some tests inspired by [Zack's tweet](https://x.com/zack_overflow/status/1959308058200551721), and the results were fascinating — and worrying.
 
 ---
 
@@ -23,21 +23,21 @@ I started with a clean website, no hidden prompts. VoxPilot summarized the page 
   <figcaption style="text-align: center;">Clean website, no hidden prompts, worked nice</figcaption>
 </figure>
 
-### 2. Visible Indirect Prompt
+### 2. Visible Indirect-Prompt
 Then I added a visible indirect prompt — literally text on the page telling the model to sing a lullaby instead of summarizing. VoxPilot obeyed! Instead of a summary, I got a lullaby. This confirmed the vulnerability.
 <figure>
   <img src="/assets/images/Indirect-prompt-injection-pic2.png" alt="Visible indirect prompt, VoxPilot disobeyed">
   <figcaption style="text-align: center;">Visible indirect prompt, VoxPilot disobeyed</figcaption>
 </figure>
 
-### 3. Hidden Prompt (Ignored)
+### 3. Hidden Indirect-Prompt (Ignored)
 Next, I hid the prompt using techniques that **screen readers ignore** (like `aria-hidden`). Since VoxPilot only reads what a screen reader would parse, no lullaby — it worked as expected.
 <figure>
   <img src="/assets/images/Indirect-prompt-injection-pic3.png" alt="Ignored hidden indirect-prompt, summarized right">
   <figcaption style="text-align: center;">Ignored hidden prompt, summarized right</figcaption>
 </figure>
 
-### 4. CSS-Visually-Hidden Prompt (Successful)
+### 4. Hidden Indirect-Prompt through CSS (Successful)
 Finally, I hid the malicious prompt using **CSS tricks** (e.g., `display:none`, `visibility:hidden`). The text was invisible to the user but still in the DOM. VoxPilot picked it up and got hijacked again. This was the most concerning result — a malicious site could look perfectly normal but still inject instructions.
 <figure>
   <img src="/assets/images/Indirect-prompt-injection-pic4.png" alt="Hidden indirect prompt, VoxPilot disobeyed">
