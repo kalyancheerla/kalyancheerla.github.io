@@ -7,4 +7,5 @@ export const redirects: Record<string, string> = {
   HotelCancellationsML: "https://github.com/kalyancheerla/Hotel-Reservation-Cancellation-Prediction",
   ppt: "https://1drv.ms/p/c/77f7f1145d1e1253/EcOowvxNJSpGhWu3lCTwPl0B56u9hRMShHZKMOzPfZKJKg",
   voxpilot: "https://kalyanch.com/posts/voxpilot-client-side-genai/",
+  cv: "https://drive.google.com/file/d/1h6IM3oG1nUVdntx6UBod15b28DyVmW2K/view?usp=sharing",
 };
