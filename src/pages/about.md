@@ -21,11 +21,11 @@ My work blends **research rigor** with a **builder mindset**: from cryptographic
 ### Recent work & projects
 * 🧠 **FHE vs GC Paper**: Cheerla, K., Ben Othmane, L., & Morozov, K. (2025). Comparison of Fully Homomorphic Encryption and Garbled Circuit Techniques in Privacy-Preserving Machine Learning Inference [Preprint]. arXiv. [https://arxiv.org/abs/2510.07457](https://arxiv.org/abs/2510.07457)
 
-* 🛠️ **MicroSvcsThreatsMapper** — built a Threats Manager Studio extension to automate threat model generation for Kubernetes microservices.
-  [kalyanch.com/r/microsvcsthreatsmapper](https://kalyanch.com/r/microsvcsthreatsmapper)
+* 🛠️ **MicroSvcsThreatsMapper** — built a Threats Manager Studio extension to automate threat model generation for Kubernetes microservices aiding PhD research.
+  [Code repository with Video](/r/microsvcsthreatsmapper)
 
 * 🛠️ **VoxPilot** — client-side, privacy-preserving AI assistant using Gemini Nano for on-device voice interaction.
-  [kalyanch.com/r/voxpilot](https://kalyanch.com/r/voxpilot)
+  [VoxPilot Blog](/posts/voxpilot-client-side-genai)
 
 ---
 
