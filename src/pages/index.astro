@@ -50,13 +50,13 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       Welcome to my digital garden 🌱, a place where I share thoughts, tools, and experiments across AI, security, homelabing, automations, and more. I write about anything that inspires me and everything that transpires through my explorations of building and breaking stuff 🛠️.
       </p>
       <p class="mt-2">
-        Thanks for stopping by. Feel free to connect via the links below or browse the recent posts 👇.
+        Thanks for stopping by! I'm always <span class="text-accent">open to new opportunities and collaborations</span>. Peek at my resume below alongside my socials, or dive into the recent posts 👇.
       </p>
       {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Contact Links:</div>
+            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Resume & Socials:</div>
             <Socials />
           </div>
         )
