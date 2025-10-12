@@ -56,7 +56,7 @@ Reach me at [**hello@kalyanch.com**](mailto:hello@kalyanch.com) or via below soc
 
 ## Elsewhere
 * Resume: [View PDF](https://drive.google.com/file/d/1_v3nzW9A_jMF75MU81UUqdNfKGiaWJxF/view?usp=drive_link)
-* Google Scholar: Coming soon.
+* Google Scholar: [scholar.google.com/citations?user=wsmUsV0AAAAJ&hl=en](https://scholar.google.com/citations?user=wsmUsV0AAAAJ&hl=en)
 * GitHub: [github.com/kalyancheerla](https://github.com/kalyancheerla)
 * X (Twitter): [x.com/kalyanch05](https://x.com/kalyanch05)
 * LinkedIn: [linkedin.com/in/kalyancheerla](https://linkedin.com/in/kalyancheerla)
