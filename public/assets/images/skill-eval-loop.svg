@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 955" role="img" aria-labelledby="title desc">
+  <title id="title">Skill eval loop with cassette-backed MCP replay</title>
+  <desc id="desc">A flow diagram showing fixtures flowing into a harness, cassette-backed mock MCP servers, graders, reports, and a CI gate.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .bg { fill: #f8fafc; }
+      .label-bg { fill: #f8fafc; opacity: 0.96; rx: 6; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 18; filter: url(#shadow); }
+      .soft { fill: #f1f5f9; stroke: #cbd5e1; stroke-width: 2; rx: 14; }
+      .fixture { fill: #ecfdf5; stroke: #10b981; }
+      .harness { fill: #eff6ff; stroke: #3b82f6; }
+      .cassette { fill: #fff7ed; stroke: #f97316; }
+      .grade { fill: #f5f3ff; stroke: #8b5cf6; }
+      .gate { fill: #fef2f2; stroke: #ef4444; }
+      .title { font: 700 22px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .label { font: 700 17px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .text { font: 14px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; }
+      .tiny { font: 12px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #64748b; }
+      .arrow { fill: none; stroke: #475569; stroke-width: 2.6; marker-end: url(#arrow); }
+      .line { fill: none; stroke: #475569; stroke-width: 2.6; }
+      .dash { fill: none; stroke: #64748b; stroke-width: 2.4; stroke-dasharray: 8 8; marker-end: url(#arrow); }
+      .pill { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; rx: 18; }
+      .axis { fill: #ffffff; stroke: #ddd6fe; stroke-width: 2; rx: 14; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="955"/>
+
+  <text class="title" x="600" y="56" text-anchor="middle">Skill eval loop</text>
+  <text class="text" x="600" y="84" text-anchor="middle">Pin the inputs and tool IO, run the agent, grade the trajectory, gate the change.</text>
+
+  <rect class="panel fixture" x="52" y="140" width="250" height="190"/>
+  <text class="label" x="82" y="178">fixtures/&lt;case&gt;/</text>
+  <text class="text" x="82" y="210">prompt + inputs</text>
+  <text class="text" x="82" y="236">expected_sources</text>
+  <text class="text" x="82" y="262">keyfacts</text>
+  <text class="text" x="82" y="284">cassettes/</text>
+  <text class="text" x="82" y="310">(last live MCP run)</text>
+
+  <rect class="panel harness" x="400" y="120" width="400" height="210"/>
+  <text class="label" x="430" y="158">harness</text>
+  <text class="text" x="430" y="188">(Agent SDK + mock MCPs)</text>
+  <rect class="pill" x="430" y="212" width="142" height="42"/>
+  <text class="text" x="501" y="238" text-anchor="middle">[prompt]</text>
+  <rect class="pill" x="628" y="212" width="142" height="42"/>
+  <text class="text" x="699" y="238" text-anchor="middle">agent loop</text>
+  <path class="arrow" d="M572 233 H623"/>
+  <text class="tiny" x="430" y="286">Collect full trajectory: tool_use, tool_result, final output.</text>
+
+  <rect class="panel cassette" x="898" y="140" width="250" height="190"/>
+  <text class="label" x="928" y="178">mock MCP server(s)</text>
+  <text class="text" x="928" y="210">same tool names</text>
+  <text class="text" x="928" y="236">same schemas</text>
+  <text class="text" x="928" y="262">args -&gt; cassette -&gt; IO</text>
+  <text class="tiny" x="928" y="300">cassette misses = drift</text>
+
+  <path class="arrow" d="M302 225 H390"/>
+  <rect class="label-bg" x="316" y="186" width="76" height="22"/>
+  <text class="tiny" x="354" y="201" text-anchor="middle">fixed input</text>
+  <path class="arrow" d="M770 233 H888"/>
+  <rect class="label-bg" x="806" y="190" width="82" height="22"/>
+  <text class="tiny" x="847" y="205" text-anchor="middle">tool_use(args)</text>
+  <path class="arrow" d="M898 274 H810"/>
+  <rect class="label-bg" x="815" y="286" width="74" height="22"/>
+  <text class="tiny" x="852" y="301" text-anchor="middle">tool_result</text>
+
+  <rect class="panel soft" x="455" y="390" width="290" height="120"/>
+  <text class="label" x="485" y="430">output + full trajectory</text>
+  <text class="text" x="485" y="460">tool-call log</text>
+  <text class="tiny" x="485" y="484">tokens + seconds</text>
+  <path class="arrow" d="M600 330 V380"/>
+
+  <rect class="panel grade" x="106" y="665" width="988" height="160"/>
+  <text class="label" x="136" y="709">graders</text>
+
+  <rect class="axis" x="280" y="720" width="182" height="74"/>
+  <text class="text" x="371" y="749" text-anchor="middle">retrieval</text>
+  <text class="tiny" x="371" y="773" text-anchor="middle">(recall + precision)</text>
+
+  <rect class="axis" x="508" y="720" width="182" height="74"/>
+  <text class="text" x="599" y="749" text-anchor="middle">synthesis</text>
+  <text class="tiny" x="599" y="773" text-anchor="middle">(keyphrase + judge)</text>
+
+  <rect class="axis" x="736" y="720" width="182" height="74"/>
+  <text class="text" x="827" y="749" text-anchor="middle">structure</text>
+  <text class="tiny" x="827" y="773" text-anchor="middle">(hard gates + parser)</text>
+
+  <path class="line" d="M600 510 V555"/>
+  <circle cx="600" cy="555" r="4" fill="#475569"/>
+  <path class="line" d="M600 555 C558 654 371 654 371 690"/>
+  <path class="arrow" d="M371 690 V714"/>
+  <path class="arrow" d="M600 555 V714"/>
+  <path class="line" d="M600 555 C642 654 827 654 827 690"/>
+  <path class="arrow" d="M827 690 V714"/>
+
+  <rect class="panel gate" x="390" y="860" width="420" height="64"/>
+  <text class="text" x="600" y="886" text-anchor="middle">report.json + baseline gate + scores</text>
+  <text class="tiny" x="600" y="908" text-anchor="middle">(Langfuse, OTel, whatever)</text>
+  <path class="arrow" d="M600 794 V854"/>
+
+  <path class="dash" d="M1023 330 C1023 402 828 450 755 456"/>
+  <rect class="label-bg" x="984" y="376" width="52" height="23"/>
+  <text class="tiny" x="1010" y="392" text-anchor="middle">replay</text>
+
+  <path class="dash" d="M178 330 C178 425 365 456 445 458"/>
+  <rect class="label-bg" x="186" y="398" width="62" height="42"/>
+  <text class="tiny" x="217" y="415" text-anchor="middle">expected</text>
+  <text class="tiny" x="217" y="433" text-anchor="middle">answers</text>
+</svg>
